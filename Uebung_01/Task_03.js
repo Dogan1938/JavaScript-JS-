@@ -7,12 +7,10 @@ function coinCombo(cent){
     let retCoin = [];
 
     for(let i = coins.length - 1; i >= 0; i--){
-        while((cent % coins[i]) > coins[i]){
-            cent %= coins[i];
+        retCoin[i] = 0;
+        while(cent >= coins[i]){
+            cent -= coins[i];
             retCoin[i]++;
-        }
-        if (retCoin[i] === undefined){
-            retCoin[i] = 0;
         }
     }
     return retCoin;
@@ -25,5 +23,3 @@ function printArray(arr){
 
 //MAIN
 printArray(coinCombo(15));
-console.log(44);
-
