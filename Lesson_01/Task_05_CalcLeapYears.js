@@ -6,7 +6,7 @@ Description:    isLeap() calculates if param is leap,
 
 //DEFINITIONS
 function isLeap(num){
-    if(num % 4 == 0){
+    if(num % 4 == 0 || num % 400 == 0){
         return true;
     }
     return false;
@@ -21,5 +21,5 @@ function isLeapArray(arr){
 
 
 //MAIN
-let arr1 = [2012,1904,2048,1905];
+let arr1 = [2012,1904,2048,1905,1900];
 isLeapArray(arr1);
