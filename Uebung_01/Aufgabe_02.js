@@ -19,17 +19,26 @@ Array.prototype.manipulateThisLoop = function (){
 
 
 
+/*
+*Print an Array
+*/
 
+//Pre define Version
+
+/*function printer(param1){
+    console.log(param1)
+}
+function printArr2(arr, cb(element)){
+    arr.forEach(cb(element))
+}
+*/
+
+//Define in Callback Version 
 function printArr(arr){
     arr.forEach(function(element){console.log(element)})
 }
 
-
-
-
-
-
-//TEIL
+//ProcessArray Funktion
 function processArray(myArray, cb){
     let retArr = [myArray.length];
     retArr[0] = "-1";
@@ -39,13 +48,6 @@ function processArray(myArray, cb){
     }
 
     return retArr;
-
-
-    //myArray.forEach(function(element){this = cb(element)});
-    
-    // myArray.forEach(function(num){
-    //     return num.manipulate();
-    // });
 }
 
 
@@ -55,6 +57,7 @@ arr1 = [44,99,2,48,7779,15,24,4,3,7,9,1,2];
 
 printArr(arr1);
 let newArr = processArray(arr1, function(a){return Math.pow(a,2)});
+
 console.log("");
 console.log("New Array: ");
 printArr(newArr);
