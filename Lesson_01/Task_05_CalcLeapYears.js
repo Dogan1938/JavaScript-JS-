@@ -21,5 +21,5 @@ function isLeapArray(arr){
 
 
 //MAIN
-let arr1 = [2012,1904,2048,1905,1900];
+let arr1 = [2012,1904,2048,1905,1900,2012,2015];
 isLeapArray(arr1);
