@@ -5,12 +5,12 @@ Description:    Tests if all Numbers in an given Array are Square Numbers.
 */
 
 //DEFINITIONS
-Array.prototype.isSquare = function(){
-    if(this.length == 0){
+Array.prototype.isSquare = function () {
+    if (this.length == 0) {
         return undefined;
     }
-    for(let i = 0; i < this.length; i++){
-        if(Number.isInteger(Math.log2(this[i])) === false){
+    for (let i = 0; i < this.length; i++) {
+        if (Number.isInteger(Math.log2(this[i])) === false) {
             return false;
         }
     }
@@ -18,9 +18,9 @@ Array.prototype.isSquare = function(){
 }
 
 //MAIN
-arr1 = [1,2,4,16,32,128];
-arr2 = [64,32,128,4096];
-arr3 = [64,17,3,64];
+arr1 = [1, 2, 4, 16, 32, 128];
+arr2 = [64, 32, 128, 4096];
+arr3 = [64, 17, 3, 64];
 arr4 = [];
 
 console.log(arr1.isSquare());

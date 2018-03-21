@@ -8,13 +8,13 @@ Description:    Function, which returns
 
 //DEFINITIONS
 
-function coinCombo(cent){
+function coinCombo(cent) {
     let coins = [1, 2, 5, 10, 20, 50];
     let retCoin = [];
 
-    for(let i = coins.length - 1; i >= 0; i--){
+    for (let i = coins.length - 1; i >= 0; i--) {
         retCoin[i] = 0;
-        while(cent >= coins[i]){
+        while (cent >= coins[i]) {
             cent -= coins[i];
             retCoin[i]++;
         }
@@ -22,8 +22,8 @@ function coinCombo(cent){
     return retCoin;
 }
 
-function printArray(arr){
-    arr.forEach(function(element){console.log(element)})
+function printArray(arr) {
+    arr.forEach(function (element) { console.log(element) })
 }
 
 

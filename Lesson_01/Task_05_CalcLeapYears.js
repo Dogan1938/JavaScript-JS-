@@ -5,14 +5,14 @@ Description:    isLeap() calculates if param is leap,
 */
 
 //DEFINITIONS
-function isLeap(num){
-    if(num % 4 == 0 || num % 400 == 0){
+function isLeap(num) {
+    if (num % 4 == 0 || num % 400 == 0) {
         return true;
     }
     return false;
 }
 
-function isLeapArray(arr){
+function isLeapArray(arr) {
     arr.forEach(element => {
         console.log(element + ": " + isLeap(element));
     });
@@ -21,5 +21,5 @@ function isLeapArray(arr){
 
 
 //MAIN
-let arr1 = [2012,1904,2048,1905,1900,2012,2015];
+let arr1 = [2012, 1904, 2048, 1905, 1900, 2012, 2015];
 isLeapArray(arr1);
