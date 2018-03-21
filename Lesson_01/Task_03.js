@@ -1,4 +1,10 @@
-//Taskname: Comibation Of Coins
+/*
+Taskname:       Comibation Of Coins
+Description:    Function, which returns 
+                an array of coins fitting in one coin
+*/
+
+
 
 //DEFINITIONS
 
