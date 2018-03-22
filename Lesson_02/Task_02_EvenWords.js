@@ -6,24 +6,17 @@ Description:    Tests if words of given String have an even amount of chars.
 
 //DEFINITIONS
 function evenWords(str) {
-    let to_exclude = [",", ".", "?", "_", "!"];
+    //Remove all unwanted symbols
+    str = str.replace(/\!|\?|\.|\,|\_/gi, "");
 
-    let regex = new RegExp("\\!|\?|\.|\,|\_", "gi"); 
-    //let regex = new RegExp("\\,\.\_\?\!", "gi"); 
-
-    //str = str.replace(/\!/gi, "");
-    str = str.replace(regex, "");
-
-
-    //Round 1: remove all unwanted symbols
+    //Add chars for even words
+    let count = 0;
     for (let i = 1; i < str.length; i++) {
-        if (to_exclude.indexOf(str.charAt(i)) != -1) {
-
-
-            //str = str.charAt(i).replace()
-            //i--;
+        if (str.charAt(i) != " ") {
+            count++;
         }
     }
+    
     return str;
 }
 
@@ -31,3 +24,21 @@ function evenWords(str) {
 //MAIN
 let string1 = "!lel _4 !?AAa!";
 console.log(evenWords(string1));
+
+
+
+
+
+
+
+
+
+//BACKUP
+    //let regex = /\!|\?|\.|\,|\_/gi;
+    //let to_exclude = [",", ".", "?", "_", "!"];
+
+    
+    //let regex = new RegExp("\!|\?|\.|\,|\_", "gi"); 
+    //let regex = new RegExp("\\,\.\_\?\!", "gi"); 
+
+    //str = str.replace(/\!/gi, "");
