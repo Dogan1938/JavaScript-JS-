@@ -5,7 +5,7 @@ Description:    Tests if given String is HexaDecimal
 
 //DEFINITIONS
 
-Array.prototype.isHexArray = function (){
+Array.prototype.isHexArray = function () {
     this.forEach(element => {
         console.log(element + ": " + element.isHex())
     })
@@ -22,7 +22,7 @@ String.prototype.isHex = function () {
         if (typeof c === "string") {
             c = c.toUpperCase();
         }
-        else{
+        else {
             c = c.toString();
             c = c.toUpperCase();
         }
@@ -36,7 +36,7 @@ String.prototype.isHex = function () {
 
 
 //MAIN
-arr1 = ["ffx5","gfa5","ff95","af75","339468763afef5","0a5","0"];
+arr1 = ["ffx5", "gfa5", "ff95", "af75", "339468763afef5", "0a5", "0"];
 
 arr1.isHexArray();
 
