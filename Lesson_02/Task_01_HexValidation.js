@@ -1,6 +1,6 @@
 /*
 Taskname:       Hexadecimal Validation
-Description:    
+Description:    Tests if given String is HexaDecimal
 */
 
 //DEFINITIONS
