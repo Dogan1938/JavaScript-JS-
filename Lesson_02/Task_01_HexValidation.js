@@ -3,8 +3,9 @@ Taskname:       Hexadecimal Validation
 Description:    Tests if given String is HexaDecimal
 */
 
-//DEFINITIONS
+//VER 1.0
 
+//DEFINITIONS
 Array.prototype.isHexArray = function () {
     this.forEach(element => {
         console.log(element + ": " + element.isHex())
