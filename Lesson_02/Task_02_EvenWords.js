@@ -26,10 +26,10 @@ String.prototype.evenWordsV2 = function () {
 
 
 //MAIN
-let string1 = "How did we end up here? We go?";
+let test_string = "How did we end up here? We go?";
 
 console.log("Function result:");
-console.log(string1.evenWordsV2());
+console.log(test_string.evenWordsV2());
 console.log("Expected result:");
 console.log("Howw didd we endd up here We go");
 
