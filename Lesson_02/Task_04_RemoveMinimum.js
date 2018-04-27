@@ -7,15 +7,17 @@ Description:    Removes the miminum Number in an array, if inludes(element)
 */
 
 //DEFINITIONS
-function removeMinimum(arr){
+function removeMinimum(arr) {
     let min = Number.MAX_SAFE_INTEGER;
     arr.forEach(element => {
         element < min ? min = element : min = min;
     });
-    arr.splice(arr.indexOf(min),1);
+    arr.splice(arr.indexOf(min), 1);
     return arr;
 }
 
 //MAIN
 let array1 = [5, 3, 2, 1, 4];
-removeMinimum(array1).forEach(element => {console.log(element)});
+removeMinimum(array1).forEach(element => {
+    console.log(element)
+});
